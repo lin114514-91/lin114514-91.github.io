@@ -1,0 +1,237 @@
+<!-- articles/example.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML标签试用 - lin114514的个人博客</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<header>
+    <div class="header-content">
+        <div class="logo">
+            <img src="https://cdn.luogu.com.cn/upload/usericon/1392988.png" alt="头像" class="avatar">
+            <h1>lin114514<span class="tagline">的个人博客</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html"><i class="fas fa-home"></i> 首页</a></li>
+                <li><a href="list.html"><i class="fas fa-list"></i> 文章列表</a></li>
+                <li><a href="aboutus.html"><i class="fas fa-user"></i> 关于我</a></li>
+                <li><a href="../minecraft_zone/index.html"><i class="fas fa-cube"></i> MC专区</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle" aria-label="切换主题">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+</header>
+
+<main class="article-page">
+    <article class="full-article">
+        <header class="article-header">
+            <h1>HTML标签试用</h1>
+            <div class="article-meta">
+                <span><i class="fas fa-user"></i> lin114514</span>
+                <span><i class="fas fa-calendar"></i> 2025年</span>
+                <span><i class="fas fa-tag"></i> HTML</span>
+            </div>
+        </header>
+
+        <div class="article-content">
+            <h2>文本标签</h2>
+            <p>这是一段普通的段落文本。</p>
+            <p><strong>这是加粗的文本</strong></p>
+            <p><em>这是斜体的文本</em></p>
+            <p><u>这是带下划线的文本</u></p>
+            <p><s>这是带删除线的文本</s></p>
+            <p><mark>这是高亮的文本</mark></p>
+            <p>这是<sub>下标</sub>和<sup>上标</sup>文本</p>
+
+            <h2>标题标签</h2>
+            <h1>一级标题</h1>
+            <h2>二级标题</h2>
+            <h3>三级标题</h3>
+            <h4>四级标题</h4>
+            <h5>五级标题</h5>
+            <h6>六级标题</h6>
+
+            <h2>列表标签</h2>
+            <h3>无序列表</h3>
+            <ul>
+                <li>列表项1</li>
+                <li>列表项2</li>
+                <li>列表项3</li>
+            </ul>
+
+            <h3>有序列表</h3>
+            <ol>
+                <li>第一项</li>
+                <li>第二项</li>
+                <li>第三项</li>
+            </ol>
+
+            <h3>定义列表</h3>
+            <dl>
+                <dt>HTML</dt>
+                <dd>超文本标记语言</dd>
+                <dt>CSS</dt>
+                <dd>层叠样式表</dd>
+                <dt>JavaScript</dt>
+                <dd>脚本语言</dd>
+            </dl>
+
+            <h2>链接和图像</h2>
+            <p><a href="https://www.example.com" target="_blank">这是一个链接</a></p>
+            <figure>
+                <img src="https://cdn.luogu.com.cn/upload/usericon/1392988.png" alt="示例图片" width="200">
+                <figcaption>示例图片</figcaption>
+            </figure>
+
+            <h2>表格</h2>
+            <table>
+                <thead>
+                <tr>
+                    <th>编程语言</th>
+                    <th>难度</th>
+                    <th>用途</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td>简单</td>
+                    <td>网页结构</td>
+                </tr>
+                <tr>
+                    <td>C++</td>
+                    <td>困难</td>
+                    <td>系统开发</td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td>中等</td>
+                    <td>数据分析</td>
+                </tr>
+                </tbody>
+            </table>
+
+            <h2>表单元素</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">姓名:</label>
+                    <input type="text" id="name" name="name" placeholder="输入姓名">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">邮箱:</label>
+                    <input type="email" id="email" name="email" placeholder="输入邮箱">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">留言:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="输入留言"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="language">编程语言:</label>
+                    <select id="language" name="language">
+                        <option value="html">HTML</option>
+                        <option value="cpp">C++</option>
+                        <option value="python">Python</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" name="subscribe"> 订阅更新
+                    </label>
+                </div>
+
+                <button type="submit">提交</button>
+            </form>
+
+            <h2>多媒体元素</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <h2>代码展示</h2>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;示例页面&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+            <h2>引用和块引用</h2>
+            <blockquote>
+                <p>编程是一种思维方式，而不仅仅是一种技能。</p>
+                <footer>— lin114514</footer>
+            </blockquote>
+
+            <p>根据W3C的定义，<q>HTML是用于创建网页的标准标记语言</q>。</p>
+
+            <h2>语义化标签</h2>
+            <article>
+                <header>
+                    <h3>文章标题</h3>
+                </header>
+                <p>这是一篇使用语义化标签的文章内容。</p>
+                <footer>
+                    <p>文章作者: lin114514</p>
+                </footer>
+            </article>
+
+            <aside>
+                <h3>侧边栏信息</h3>
+                <p>这是侧边栏内容，可以包含相关链接或补充信息。</p>
+            </aside>
+        </div>
+    </article>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-links">
+            <a href="../index.html">首页</a>
+            <a href="list.html">文章列表</a>
+            <a href="aboutus.html">关于我</a>
+            <a href="../minecraft_zone/index.html">MC专区</a>
+        </div>
+        <div class="copyright">
+            <p>Copyright©2025-2026 Lin114514. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // 主题切换功能
+    const themeToggle = document.getElementById('theme-toggle');
+    const htmlElement = document.documentElement;
+
+    if (localStorage.getItem('theme') === 'dark' ||
+        (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        htmlElement.classList.add('dark');
+        themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+    }
+
+    themeToggle.addEventListener('click', () => {
+        htmlElement.classList.toggle('dark');
+
+        if (htmlElement.classList.contains('dark')) {
+            localStorage.setItem('theme', 'dark');
+            themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+        } else {
+            localStorage.setItem('theme', 'light');
+            themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+        }
+    });
+</script>
+</body>
+</html>
