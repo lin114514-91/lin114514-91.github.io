@@ -1,0 +1,105 @@
+<!-- minecraft_zone/mc_example.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>手把手教你MC 0成本开服(上) - lin114514的个人博客</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<header>
+    <div class="header-content">
+        <div class="logo">
+            <img src="https://cdn.luogu.com.cn/upload/usericon/1392988.png" alt="头像" class="avatar">
+            <h1>lin114514<span class="tagline">的个人博客</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../../index.html"><i class="fas fa-home"></i> 首页</a></li>
+                <li><a href="../../articles/list.html"><i class="fas fa-list"></i> 文章列表</a></li>
+                <li><a href="../../articles/aboutus.html"><i class="fas fa-user"></i> 关于我</a></li>
+                <li><a href="../index.html" class="active"><i class="fas fa-cube"></i> MC专区</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle" aria-label="切换主题">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+</header>
+
+<main class="article-page">
+    <article class="full-article">
+        <header class="article-header">
+            <h1>MC标签试用</h1>
+            <div class="article-meta">
+                <span><i class="fas fa-user"></i> lin114514</span>
+                <span><i class="fas fa-calendar"></i> 2025年</span>
+                <span><i class="fas fa-tag"></i> Minecraft</span>
+            </div>
+        </header>
+
+        <div class="article-content">
+            <h1>手把手教你MC 0成本 开服 (上)</h1>
+            <blockquote>
+              <p>这是第一篇(上)</p>
+              <strong>其他暂未完成</strong>
+              <a href="/mc_server_open_2_of_3">第二篇(中)</a>
+              <a href="/mc_server_open_3_of_3">第三篇(下)</a>
+              <a href="/mc_server_open_faq">常见问题(番外)</a>
+            </blockquote>
+            <ol>
+              <li>进入<strong><a href="https://rainyun.com">雨云</a></strong></li>
+              <li>注册账号</li>
+              <li>进入<strong>赚取积分</strong></li>
+              <li>赚取好后进入<strong>积分商城</strong>,买一个2000积分的服务器<strong>(一定记得绑微信)</strong></li>
+            </ol>
+            <progress max="100" value="100"></progress>
+            <h5>预告</h5>
+            <p>接下来,中、下篇将教你Paper端插件安装、部署、重装等操作</p>
+            <progess max="100" value="100"></progess>
+            <h6>The End</h6>
+        </div>
+    </article>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-links">
+            <a href="../../index.html">首页</a>
+            <a href="../../articles/list.html">文章列表</a>
+            <a href="../../articles/aboutus.html">关于我</a>
+            <a href="../index.html">MC专区</a>
+        </div>
+        <div class="copyright">
+            <p>Copyright©2025-2026 Lin114514. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // 主题切换功能
+    const themeToggle = document.getElementById('theme-toggle');
+    const htmlElement = document.documentElement;
+
+    if (localStorage.getItem('theme') === 'dark' ||
+        (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        htmlElement.classList.add('dark');
+        themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+    }
+
+    themeToggle.addEventListener('click', () => {
+        htmlElement.classList.toggle('dark');
+
+        if (htmlElement.classList.contains('dark')) {
+            localStorage.setItem('theme', 'dark');
+            themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+        } else {
+            localStorage.setItem('theme', 'light');
+            themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+        }
+    });
+</script>
+</body>
+</html>
